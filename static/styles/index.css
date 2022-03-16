@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('/static/images/newbg.png') no-repeat center center fixed ;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.container h1{
+    margin-top: -30px;
+    color: white;
+    font-size: 34px;
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 18s  infinite;
+}
+.anim{
+    display: block;
+}
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 80ch;
+    }
+
+}
+
+textarea{
+    font-size: 21px;
+    margin-top: 30px;
+    border: none;
+    appearance: none;
+    padding: 10px 10px;
+    outline: none;
+    width: 35%;
+    height: 100px;
+    border-radius: 5px;
+    resize:none;
+    background: #f2f2f2;
+}
+textarea::placeholder{
+    color: #222;
+}
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+.form_div{
+    width: 80%;
+    margin-top: 30px;
+}
+#tweet{
+    display: block;
+    margin: auto;
+}
+
+button{
+    display: block;
+    margin: auto;
+    background-color: #222;
+    color: white;
+    padding: 12px 17px;
+    margin-top: 30px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
